@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>ECFM</title>
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
+    <link rel="stylesheet" href="css/styles.en.css">
+    <script src="../code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="../code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+    <link href="css/perfect-scrollbar.css" rel="stylesheet">
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/perfect-scrollbar.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/spin.min.js"></script>
+	<meta name="designer" content="Nitesh vaidya">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+
+    
+   <div id="newscon">
+    <div id="news">
+            <div id="closeicon2"></div>
+            <div class="newsline" id="nl00">
+                <div id="newstxt">NEWS & EVENTS</div>
+            </div>
+           <!-- ajax -->
+            <div id="newsbar">
+            </div>
+            <!-- ajax -->
+            
+    </div>
+    </div>
+    
+    
+    <div id="menu">
+        <div id="closeicon"></div>
+        <div id="logohead2"></div>
+        <div class="items">
+            <div class="menuitems" id="mi1">Home</div>
+            <div class="menuitems" id="mi2">About ECFM</div>
+            <div class="menuitems" id="mi3">NEWS & EVENTS</div>
+            <div class="menuitems" id="mi4">Feedback</div>
+            <div class="menuitems" id="mi5">Importance</div>
+            <div class="menuitems" id="mi6">CONTACT US</div>
+        </div>
+        
+        <div id="contacttab">
+            <div id="address">ALVA'S INSTITUTE OF ENGINEERING & TECHNOLOGY.
+<br>
+Shobhavana Campus, Mijar, Moodbidri - 574 225, Mangalore,
+<br>
+DK Karnataka State - INDIA <br>Tel:  09845050268, 08258 - 262724<br>
+                <a href="mailto:niteshvaidya591@gmail.com">E-mail:niteshvaidya591@gmail.com</a>
+        </div>
+    </div>
+    </div>
+    
+    <a href="http://aiet.org.in/" target="_blank"><div id="swan"></div></a>
+	<div class="horizental">
+    <div class="horztxt">Please rotate your phone</div>
+</div>
+
+
+<div class="container">   
+
+    	
+        <div class="moredetail" id="md1">
+            <div id="logohead2"></div>
+            <div id="closeiconmore"></div>
+            <div class="footer" id="footerfirst2">COPYRIGHT©2017 - AIET</div>
+            <div class="titletxt" id="abouttitlemore">Future scope.....</div>
+            <div class="textbox" id="abouttxtmore">The feedback portal can be upgraded for post graduation <br>
+MBA:
+
+    Financial Management,
+    Human Resources Management,
+    Marketing Management,
+    Banking,<br>
+
+M. Tech.:
+
+    Mechanical (Thermal Power Engg.),
+    Computer Science & Engineering,
+    E & C ( VLSI Design Embedded System),
+
+ </div>
+            <div class="table">
+                <div class="rows">
+                    <div class="rowtxt"><b>Under Graduate Courses:</b> </div>
+                    <div class="rowtxt2">Information Science & Engineering</div>
+					
+                </div>
+				 <div class="rows">
+               
+                    <div class="rowtxt2">Computer Science & Engineering</div>
+					
+                </div>
+				 <div class="rows">
+               
+                    <div class="rowtxt2">Electronics & Communication</div>
+					
+                </div>
+				 <div class="rows">
+               
+                    <div class="rowtxt2">Mechanical Engineering</div>
+					
+                </div>
+				 <div class="rows">
+               
+                    <div class="rowtxt2">Civil Engineering</div>
+					
+                </div>
+                <div class="rows">
+                    <div class="rowtxt"><b>Post Graduate Courses:</b></div>
+                    <div class="rowtxt2">MTECH</div>
+                </div>
+                <div class="rows">
+                    <div class="rowtxt2">MBA</div>
+                </div>
+              
+            </div>
+        </div>	
+      
+          <div class="bg">
+        <video autoplay loop muted poster="img/vid-first-frame.jpg" id="video-bg">
+            <source src="img/video.webm" type="video/webm">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="menuicon"></div>
+    
+        
+    <div id="logohead"></div>
+    <div class="footer" id="footerhead">COPYRIGHT©2017 - AIET</div>
+
+    <div class="footer" id="footerfirst">COPYRIGHT©2017 - AIET</div>
+
+    <div id="pbutcontainer">
+        <div class="pbut" id="pbut0"></div>
+        <div class="pbut" id="pbut1"></div>
+        <div class="pbut" id="pbut2"></div>
+        <div class="pbut" id="pbut3"></div>
+        <div class="pbut" id="pbut4"></div>
+        <div class="pbut" id="pbut5"></div>
+    </div>
+
+    <div class="roll">
+	
+        <div class="roller" id="r1">
+		
+<canvas id="world"></canvas>
+<script>(function() {
+  var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
+
+  NUM_CONFETTI = 350;
+
+  COLORS = [[85, 71, 106], [174, 61, 99], [219, 56, 83], [244, 92, 68], [248, 182, 70]];
+
+  PI_2 = 2 * Math.PI;
+
+  canvas = document.getElementById("world");
+
+  context = canvas.getContext("2d");
+
+  window.w = 0;
+
+  window.h = 0;
+
+  resizeWindow = function() {
+    window.w = canvas.width = window.innerWidth;
+    return window.h = canvas.height = window.innerHeight;
+  };
+
+  window.addEventListener('resize', resizeWindow, false);
+
+  window.onload = function() {
+    return setTimeout(resizeWindow, 0);
+  };
+
+  range = function(a, b) {
+    return (b - a) * Math.random() + a;
+  };
+
+  drawCircle = function(x, y, r, style) {
+    context.beginPath();
+    context.arc(x, y, r, 0, PI_2, false);
+    context.fillStyle = style;
+    return context.fill();
+  };
+
+  xpos = 0.5;
+
+  document.onmousemove = function(e) {
+    return xpos = e.pageX / w;
+  };
+
+  window.requestAnimationFrame = (function() {
+    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
+      return window.setTimeout(callback, 1000 / 60);
+    };
+  })();
+
+  Confetti = (function() {
+    function Confetti() {
+      this.style = COLORS[~~range(0, 5)];
+      this.rgb = "rgba(" + this.style[0] + "," + this.style[1] + "," + this.style[2];
+      this.r = ~~range(2, 6);
+      this.r2 = 2 * this.r;
+      this.replace();
+    }
+
+    Confetti.prototype.replace = function() {
+      this.opacity = 0;
+      this.dop = 0.03 * range(1, 4);
+      this.x = range(-this.r2, w - this.r2);
+      this.y = range(-20, h - this.r2);
+      this.xmax = w - this.r;
+      this.ymax = h - this.r;
+      this.vx = range(0, 2) + 8 * xpos - 5;
+      return this.vy = 0.7 * this.r + range(-1, 1);
+    };
+
+    Confetti.prototype.draw = function() {
+      var ref;
+      this.x += this.vx;
+      this.y += this.vy;
+      this.opacity += this.dop;
+      if (this.opacity > 1) {
+        this.opacity = 1;
+        this.dop *= -1;
+      }
+      if (this.opacity < 0 || this.y > this.ymax) {
+        this.replace();
+      }
+      if (!((0 < (ref = this.x) && ref < this.xmax))) {
+        this.x = (this.x + this.xmax) % this.xmax;
+      }
+      return drawCircle(~~this.x, ~~this.y, this.r, this.rgb + "," + this.opacity + ")");
+    };
+
+    return Confetti;
+
+  })();
+
+  confetti = (function() {
+    var j, ref, results;
+    results = [];
+    for (i = j = 1, ref = NUM_CONFETTI; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
+      results.push(new Confetti);
+    }
+    return results;
+  })();
+
+  window.step = function() {
+    var c, j, len, results;
+    requestAnimationFrame(step);
+    context.clearRect(0, 0, w, h);
+    results = [];
+    for (j = 0, len = confetti.length; j < len; j++) {
+      c = confetti[j];
+      results.push(c.draw());
+    }
+    return results;
+  };
+
+  step();
+
+}).call(this);
+
+//# sourceURL=pen.js
+</script>
+
+            <div class="logo"></div>
+			<div class="main1txt" id="mtxt1">E-college Feedback Management </div>
+            <div class="maintxt" id="mtxt1"> ECFM</div>
+            
+
+        </div>
+		
+        <div class="roller" id="r2">
+		    <div class="titletxt" id="abouttitle">About ECFM</div>
+            <div class="textbox" id="abouttxt">
+              In order to maintain a good recognition at college, the management does every possible aspect in maintaining the qualities of the lecturer’s as well as infrastructure .One of the main evaluations done at the university is getting an anonymous student feedback at the end of each semester and getting an overall summary of the students viewpoints regarding the lectures teaching. As this is the online-era, where everything is online we need to develop a system in online which is very useful to maintain feedback reports by the administrator. The purpose of this project is to make the process of taking feedback from the students in online regarding the lecturer’s teaching as well as infrastructure.
+            </div>
+            <div class="titletxt" id="aboutnewstitle">Updates....</div>
+            <div class="textbox" id="aboutnewstxt">
+                <div class="bold">Mini project demo</div>
+
+
+                <div class="aboutnewsdate">Date Published: 07 march 2017</div>
+                <div class="aboutnewspic" style=" background-image: url(newspic/170109074510.jpg);" ><marquee direction="up"><center><b>Updates 1......<br>Updates 2.....<br>Updates 3.......<br>Updates 4.......<br>Updates 5.......<br>Updates 6.......<br>Updates 7......<br>Updates 8.......<br>Updates 9.......<br>Updates 10.......<br></b></center></marquee></div>            </div>
+            <div class="morebtn" id="morebtn0">Read More news</div>
+            <a href="en/certificate.html"><div class="morebtn" id="morebtn1">Explore more information</div></a>
+        </div>
+
+    </div>
+
+    <div class="roller" id="r3">
+        <div class="titletxt" id="producttitle">AIET</div>
+        <div class="titletxt" id="puretitle">Our College</div>
+        <div class="textbox" id="abouttxt2">Alva's Institute Of Engineering & Technology (AIET) is a premier Engineering Institute of Alva's Education Foundation established in the year 2008. AIET is strategically located adjacent to Moodbidri -Mangalore National Highway, which is 24 Kms from Mangalore International Airport. It has a lush green campus spread over 30 acres; a part of ALVA'S-SHOBHAVANA, 144 acres spread on a famous herbal garden with more than two thousand variety of herbal plants.
+        </div>
+    </div>
+    <div class="roller" id="r4-1">
+       <div class="titletxt" id="juice6"><a href="en/academic.html">ACADEMICS</a></div>
+        <div class="titletxt" id="puretitle7">CS, IS, CV, ME, EC</div>
+        <div class="protxt" id="protxt6">Alva’s Education Foundation is a multifaceted organization created by Dr. M. Mohan Alva considered as the crown of Moodbidri. It has 20 education institutions with more than 22,500 students. It is a trust registered under Trust Act with an objective of catering to the need of cultural and educational development. It started its activity in the year of 1995 with Nursing and Ayurveda streams of education.</div>
+        <div class="product" id="pjuice7"></div>
+        <div class="nutrion" id="nutrition0">
+            <div class="nutcir">
+                <div class="nuttitle">Excellent</div>
+                <div class="nutnum">100%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Good</div>
+                <div class="nutnum">75%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Average</div>
+                <div class="nutnum">50%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Poor</div>
+                <div class="nutnum">25%</div>
+            </div>
+            <div class="nutcir" id="nutmore">
+                <div class="nuttitle" id="nutmoretxt"><b>future scope</b></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="roller" id="r4">
+        <div class="titletxt" id="juice"><a href="en/event.html">EVENTS</a></div>
+        <div class="titletxt" id="puretitle2">Organized @ AIET </div>
+        <div class="protxt" id="protxt1"><b>Technical talks, Workshop, Presentations,Exhibition<br>Event planning:</b>Send a survey to invitees to get an accurate headcount and tailor your event according to their preferences.<br><b>Real-time feedback:</b>
+
+Ask attendees to give live feedback during an event to make adjustments in real time, ensuring their satisfaction.<br><b>Post-event satisfaction:</b>
+
+After your event, send a survey to see what attendees thought of the menu, speakers, and more so you can improve.</div>
+        <div class="product" id="pjuice"></div>
+        <div class="nutrion">
+            <div class="nutcir">
+                <div class="nuttitle">Excellent</div>
+                <div class="nutnum">100%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Good</div>
+                <div class="nutnum">75%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Average</div>
+                <div class="nutnum">50%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Poor</div>
+                <div class="nutnum">25%</div>
+            </div>
+			
+        </div>
+    </div>
+
+    <div class="roller" id="r5">
+        <div class="titletxt" id="juice2"><a href="en/library.html">Library</a></div>
+        <div class="titletxt" id="puretitle3">@ aiet</div>
+        <div class="protxt" id="protxt2">Today, information is one of the most important ingredients of our academic activities. Information leads to the generation of knowledge. An academic institution always takes necessary steps to gather or procure the relevant bits of knowledge from the various sources. Needless to say it is the library / information centre of an institution that is entrusted with the task of procuring, organizing and displaying the various sources of knowledge in different media and also disseminating them to the users. So we called library is a backbone of an education institution</div>
+        <div class="product" id="pjuice2"></div>
+        <div class="nutrion">
+            <div class="nutcir">
+                <div class="nuttitle">Excellent</div>
+                <div class="nutnum">100%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Good</div>
+                <div class="nutnum">75%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Average</div>
+                <div class="nutnum">50%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Poor</div>
+                <div class="nutnum">25%</div>
+            </div>
+			
+        </div>
+    </div>
+
+    <div class="roller" id="r6">
+     
+        <div class="titletxt" id="juice3"><a href="en/sports.html">Sports</a></div>
+        <div class="titletxt" id="puretitle4">@ AIET</div>
+        <div class="protxt" id="protxt3">Alva’s Education Foundation has initiated Ekalavya Sports Club 25 years back to support meritorious sports students by providing them excellent coaching along with free education and boarding. It has proved fruitful by athletics and players getting international medals and recognition other than continuously holding the championship universities they represent.</div>
+        <div class="product" id="pjuice3-2"></div>
+        <div class="product" id="pjuice3"></div>
+        <div class="nutrion">
+            <div class="nutcir">
+                <div class="nuttitle">Excellent</div>
+                <div class="nutnum">100%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Good</div>
+                <div class="nutnum">75%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Average</div>
+                <div class="nutnum">50%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Poor</div>
+                <div class="nutnum">25%</div>
+            </div>
+			
+        </div>
+    </div>
+
+    <div class="roller" id="r7">
+        <div class="titletxt" id="juice4"><a href="en/hostel.html">hostel</a></div>
+        <div class="titletxt" id="puretitle5">@ AIET</div>
+        <div class="protxt" id="protxt4">Alva’s Institute of Engineering & Technology provides the best facilities for the students who live on the hostel. Separate hostels for boys and girls with spacious rooms. Hostel students can access the Wi-Fi facility. The study hour is from 9.00 pm to 11.00 pm is compulsory and strict discipline will be maintained. The inmates of hostel are provided with reading table, chair, cot and fans. Recreational Facilities including gymnasium are also well provided</div>
+        <div class="product" id="pjuice4"></div>
+        <div class="nutrion">
+            <div class="nutcir">
+                <div class="nuttitle">Excellent</div>
+                <div class="nutnum">100%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Good</div>
+                <div class="nutnum">75%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Average</div>
+                <div class="nutnum">50%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Poor</div>
+                <div class="nutnum">25%</div>
+            </div>
+			
+        </div>
+    </div>
+
+    <div class="roller" id="r8">
+        <div class="titletxt" id="juice5"><a href="en/campus.html">campus</a></div>
+        <div class="titletxt" id="puretitle6">@ AIET</div>
+        <div class="protxt" id="protxt5">Alva's Institute Of Engineering & Technology (AIET) is a premier Engineering Institute of Alva's Education Foundation established in the year 2008. AIET is strategically located adjacent to Moodbidri -Mangalore National Highway, which is 24 Kms from Mangalore International Airport. It has a lush green campus spread over 30 acres; a part of ALVA'S-SHOBHAVANA, 144 acres spread on a famous herbal garden with more than two thousand variety of herbal plants. </div>
+        <div class="product" id="pjuice5"></div>
+       
+        <div class="nutrion">
+            <div class="nutcir">
+                <div class="nuttitle">Excellent</div>
+                <div class="nutnum">100%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Good</div>
+                <div class="nutnum">75%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Average</div>
+                <div class="nutnum">50%</div>
+            </div>
+            <div class="nutcir" id="nutcir2">
+                <div class="nuttitle" id="nutnum2">Poor</div>
+                <div class="nutnum">25%</div>
+            </div>
+			
+        </div>
+    </div>
+
+    <div class="roller" id="r8-1">
+
+
+        <div class="titletxt" id="juice8"><a href="en/cultural.html">cultural</a></div>
+
+        <div class="titletxt" id="puretitle8">aCTIVITIES</div>
+        <div class="protxt" id="protxt8">AIET provides a framework for students those who are talented in cultural activities to rediscover their hidden talents. The students of AIET are multitalented. They have utilized this opportunity and have outshined in various Engineering College Fest’s conducted all over Karnataka.</div>
+        <div class="product" id="pjuice8"></div>
+		 <div class="product" id="pjuice6"></div>
+    </div>
+
+    <div class="roller" id="r9">
+        <div class="titletxt" id="producttitle3">Feedback</div>
+        <div class="titletxt" id="puretitle14">importance?</div>
+        <div class="textbox" id="abouttxt2">Feedback is the cheapest, most powerful, yet, most under used management tool that we have at our disposal. Feedback is powerful as it helps people get on track, it serves as a guide to assist people to know how they and others perceive their performance.</div>
+        <a href="en/importance.html"><div class="morebtn" id="morebtn2">Click here to find out more</div></a>
+    </div>
+
+
+    <div class="roller" id="r10">
+	
+	
+        
+        <div class="titletxt" id="puretitle140">CONTACT</div>
+
+        <div class="textbox" id="abouttxt222">ALVA'S INSTITUTE OF ENGINEERING & TECHNOLOGY.
+<br>Shobhavana Campus, Mijar, Moodbidri - 574 225, Mangalore,
+<br>DK Karnataka State - INDIA.
+ <br> Call us : 09845050268, 08258 - 262724<br><a href="mailto:niteshvaidya591@gmail.com">E-mail: niteshvaidya591@gmail.com</a>
+        </div>
+        <div class="send">
+            <input id="findinput2" type="text" placeholder="Enter your e-mail to get our news">
+            <div class="sendbtn"><div class="sendbtntxt">Subscribe</div></div>
+        </div>
+        <div id="map">
+            <div id="sale">Project Members</div>    
+        </div>
+    </div>
+
+
+
+
+    <div id="saleshow">
+        <div id="salebox">
+            <div class="salehead">Mini Project By</div>
+            <div class="salecountry">NITESH NARAYAN VAIDYA</div>
+            <div class="saleaddress">4AL13CS060 , 3 Year 'A' sec CSE</div>
+            <div class="saleaddress saleend">Email: niteshvaidya591@gmail.com</div>
+            <div class="salecountry">PRATHEEK P P</div>
+            <div class="saleaddress">4AL13CS067 , 3 Year 'A' sec CSE</div>
+            <div class="saleaddress saleend">Email: pratheekappachu07@gmail.com</div>
+            <div class="salecountry">R TOSIHTHA</div>
+            <div class="saleaddress">4AL13CS068 , 3 Year 'A' sec CSE</div>
+            
+            <div class="saleaddress saleend">Email: chinkiparth1995@gmail.com</div>
+			<div class="salecountry">SUMATHI S M</div>
+            <div class="saleaddress">4AL13CS105 , 3 Year 'A' sec CSE</div>
+            
+            <div class="saleaddress saleend">Email: sumathi.chummu@gmail.com</div>
+            <div class="footer" id="footerfirst2">COPYRIGHT©2017 - AIET</div>
+        </div>
+    </div>
+
+
+    <div class="slide" id="slide1">
+
+        <div id="mouse"></div>
+
+    </div>
+
+    <div class="slide" id="slide2">
+        <div id="picon"></div>
+    </div>
+    <div class="slide" id="slide3">
+        <div class="pic" id="pom2"></div>
+    </div>
+
+    <div class="slide" id="slide4">
+        <div id="picon2"></div>
+    </div>
+
+    <div class="slide" id="slide5">
+        <div class="pic" id="pom3"></div>
+    </div>
+
+    <div class="slide" id="slide6">
+        <div id="picon3"></div>
+    </div>
+
+    <div class="slide" id="slide7">
+       
+    </div>
+
+</div>	</body>
+
+</html>
+
